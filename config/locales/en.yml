@@ -9,3 +9,7 @@ en:
         de: "German"
         pt-BR: "Portuguese"
         pt-PT: "Portuguese (Portugal)"
+      status:
+        full: Fully translated in this language.
+        none: Not translated in this language.
+        partial: Partially translated in this language.
