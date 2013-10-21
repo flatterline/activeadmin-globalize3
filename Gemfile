@@ -5,17 +5,19 @@ source "http://rubygems.org"
 # development dependencies will be added by default to the :development group.
 gemspec
 
-if Dir.exists?(File.expand_path('~/code/gems'))
-  gem 'railsyard-backend'               , path: File.expand_path('~/code/gems/railsyard-backend')
-else
-  gem 'railsyard-backend'               , git: 'git://github.com/cantierecreativo/railsyard-backend.git', branch: 'develop'
-end
+gem 'activeadmin', github: 'gregbell/active_admin'
 
-group :development, :test do
-  gem 'simplecov', require: false
-  gem 'sqlite3'
-  gem 'rspec-rails', '~> 2.8.1'
-  gem 'webrat'
-  gem 'friendly_id'
-end
+# if Dir.exists?(File.expand_path('~/code/gems'))
+#   gem 'railsyard-backend'               , path: File.expand_path('~/code/gems/railsyard-backend')
+# else
+#   gem 'railsyard-backend'               , git: 'git://github.com/cantierecreativo/railsyard-backend.git', branch: 'develop'
+# end
+
+# group :development, :test do
+#   gem 'simplecov', require: false
+#   gem 'sqlite3'
+#   gem 'rspec-rails', '~> 2.8.1'
+#   gem 'webrat'
+#   gem 'friendly_id'
+# end
 
